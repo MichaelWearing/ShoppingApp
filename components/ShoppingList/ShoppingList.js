@@ -7,6 +7,14 @@ import ListItem from "./ListItem";
 import Header from "./Header";
 import AddItem from "./Additem";
 
+// To-Do 
+  //100%
+    // Add an edit button for changing the item name
+  // Maybe
+    // Add sub categories (Healthy, Vegan etc)
+    // Add Pictures of foods
+    // Suggest 3 meals at, click plus to choose one, could choose all if you want
+
 export default function ShoppingList({ history }) {
   const [items, setitems] = useState([
     { id: uuid(), text: "Milk" },

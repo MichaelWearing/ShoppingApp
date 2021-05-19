@@ -3,6 +3,15 @@ import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 
 import { FontAwesome } from "@expo/vector-icons";
 
+// To-Do 
+  //100%
+    // Change background images - https://unsplash.com/photos/NFoerQuvzrs
+                                //https://unsplash.com/photos/ncKxCn5SI3A
+                                //https://unsplash.com/photos/e4EmPx91Aj4
+  // Maybe
+    // Make buttons extend entire screen, check DoneWithIt
+
+
 export default function Welcome({ history }) {
   return (
     <View style={styles.container}>
