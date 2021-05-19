@@ -1,21 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, View } from "react-native";
+import { NativeRouter, Switch, Route } from "react-router-native";
+
+import Welcome from "./components/Welcome";
+import ShoppingList from "./components/ShoppingList/ShoppingList";
+import MealPicker from "./components/MealPicker/MealPicker"
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NativeRouter>
+      <View style={styles.container}>
+        <Switch>
+          <Route exact path="/" component={Welcome} />
+          <Route exact path="/ShoppingList" component={ShoppingList} />
+          <Route exact path="/MealPicker" component={MealPicker} />
+        </Switch>
+      </View>
+    </NativeRouter>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const styles = StyleSheet.create({});
