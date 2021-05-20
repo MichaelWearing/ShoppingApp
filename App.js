@@ -20,4 +20,8 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  } // Needed 100% height before, if broken change back to no styles
+});

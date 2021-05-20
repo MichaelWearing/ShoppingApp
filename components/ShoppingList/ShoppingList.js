@@ -10,6 +10,7 @@ import AddItem from "./Additem";
 // To-Do 
   //100%
     // Add an edit button for changing the item name
+    // LocalStorage for remembering lists
   // Maybe
     // Add sub categories (Healthy, Vegan etc)
     // Add Pictures of foods
